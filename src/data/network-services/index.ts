@@ -1,3 +1,3 @@
-import NetworkApiServices from "./network-api-services"
+import NetworkApiServices from './network-api-services';
 
-export {NetworkApiServices}
+export {NetworkApiServices};

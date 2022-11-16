@@ -8,6 +8,7 @@ const RegisterScreen = () => {
   return (
     <BaseView style={styles.container}>
       <Text>Register</Text>
+
       <Button title="Login" onPress={registerViewModel.handleRegister} />
     </BaseView>
   );

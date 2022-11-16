@@ -1,3 +1,2 @@
-import AuthStack from './auth-stack/auth.stack';
-
-export {AuthStack};
+export * from './auth-stack';
+export * from './home-stack';

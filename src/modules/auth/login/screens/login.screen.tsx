@@ -1,8 +1,9 @@
 import {Button} from 'react-native';
-import { BaseView, LoginForm } from '../components';
 import {styles} from './login.style';
 import React from 'react';
-import { loginViewModel } from '../../../../view-model/auth/login.view-model';
+import {loginViewModel} from '../../../../view-model/auth/login.view-model';
+import {BaseView} from '../../../components';
+import {LoginForm} from '../components/login-form';
 
 const LoginScreen = () => {
   console.log('Login Screen');

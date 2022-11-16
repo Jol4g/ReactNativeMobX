@@ -1,8 +1,8 @@
 import {autorun, IReactionDisposer, makeAutoObservable} from 'mobx';
 import {IObservable} from '../types';
 import {User} from '../../model';
-import {navigate, navigationRef} from '../../utils/navigation/root.navigation';
-import { AuthStackParamList, LoginScreenNavigationProp } from '../../utils/navigation/stacks/auth-stack/auth.stack';
+import {navigate} from '../../utils/navigation/root.navigation';
+import {NavigationRoutes} from '../../utils';
 
 interface ILogin {
   setUserEmail: (email: string) => void;
@@ -45,7 +45,7 @@ class LoginViewModel implements ILogin, Partial<IObservable> {
   }
 
   handleLogin = () => {
-    navigate<LoginScreenNavigationProp>('',{x:'fedi'});
+    navigate<NavigationRoutes>('Register', {x: 'fedi'});
   };
 
   dispose = () => {

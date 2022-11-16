@@ -1,7 +1,7 @@
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {navigationRef} from './root.navigation';
-import AuthStack from './stacks/auth-stack/auth.stack';
+import {AuthStack} from './stacks';
 
 const MainNavigation = () => {
   console.log('MainNavigation');

@@ -1,8 +1,8 @@
-import { NetworkApiServices } from "../../data/network-services";
+import {NetworkApiServices} from '../../data/network-services';
 
 export default class LoginRepository {
-networkApiService = new NetworkApiServices()
-  loginUser = (email,pwd) => {
-    this.networkApiService.
+  networkApiService = new NetworkApiServices();
+  loginUser = () => {
+    this.networkApiService;
   };
 }

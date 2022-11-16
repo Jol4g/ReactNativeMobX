@@ -1,9 +1,9 @@
-import { makeAutoObservable } from "mobx";
+import {makeAutoObservable} from 'mobx';
 
 export class User {
-   email = '';
-   password = '';
-   age=18
+  email = '';
+  password = '';
+  age = 18;
 
   constructor() {
     console.log('Create User object');
@@ -25,5 +25,4 @@ export class User {
   get getPassword(): string {
     return this.password;
   }
-  
 }

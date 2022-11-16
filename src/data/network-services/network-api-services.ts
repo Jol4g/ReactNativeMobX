@@ -1,3 +1,1 @@
-export default class NetworkApiServices {
-    
-}
+export default class NetworkApiServices {}

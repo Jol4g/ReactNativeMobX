@@ -1,10 +1,9 @@
 // RootNavigation.js
 
 import {createNavigationContainerRef} from '@react-navigation/native';
- 
 export const navigationRef = createNavigationContainerRef();
 
-export function navigate<T>(name:T, params?: any) {
+export function navigate<T>(name: T, params?: any) {
   if (navigationRef.isReady()) {
     // Perform navigation if the react navigation is ready to handle actions
     // @ts-ignore

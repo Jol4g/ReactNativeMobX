@@ -4,11 +4,7 @@ import MainNavigation from './src/utils/navigation/main.navigation';
 const App = () => {
   console.log('render App');
 
-  return (
-   <MainNavigation/>
-  );
+  return <MainNavigation />;
 };
-
-
 
 export default App;

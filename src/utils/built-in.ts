@@ -1,5 +1,5 @@
 export function sleep(milliseconds: number) {
-    return new Promise<boolean>(resolve =>
-      setTimeout(() => resolve(true), milliseconds),
-    );
-  }
+  return new Promise<boolean>(resolve =>
+    setTimeout(() => resolve(true), milliseconds),
+  );
+}
