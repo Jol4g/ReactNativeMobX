@@ -1,2 +1,2 @@
 # React Native Boiler Plate 
-**** M(odel)V(iew)VM(ViewModel) ****
+** M(odel)V(iew)VM(ViewModel) **
