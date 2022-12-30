@@ -1,8 +1,8 @@
 import {autorun, IReactionDisposer, makeAutoObservable} from 'mobx';
 import {IObservable} from '../types';
-import {User} from '../../model';
-import {navigate} from '../../utils/navigation/root.navigation';
-import {NavigationRoutes} from '../../utils';
+import {User} from '@/model';
+import {navigate} from '@/utils/navigation/root.navigation';
+import {NavigationRoutes} from '@/utils';
 
 interface ILogin {
   setUserEmail: (email: string) => void;

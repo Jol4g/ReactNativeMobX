@@ -16,6 +16,7 @@
     "@react-navigation/native": "^6.0.13",
     "@react-navigation/native-stack": "^6.9.1",
     "axios": "0.27.2",
+    "babel-plugin-root-import": "^6.6.0",
     "mobx": "^6.6.2",
     "mobx-react": "^7.5.3",
     "react": "18.1.0",

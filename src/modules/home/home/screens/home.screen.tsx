@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text} from 'react-native';
-import {BaseView} from '../../../components';
+import {BaseView} from '@/modules/components';
 
 const HomeScreen: React.FC = () => {
   return (

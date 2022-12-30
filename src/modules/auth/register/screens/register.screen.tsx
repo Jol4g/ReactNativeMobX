@@ -1,14 +1,13 @@
 import React from 'react';
-import {registerViewModel} from '../../../../view-model';
+import {registerViewModel} from '@/view-model';
+import {BaseView} from '@/modules/components';
 import {Button, Text} from 'react-native';
 import {styles} from './register.style';
-import {BaseView} from '../../../components';
 
 const RegisterScreen = () => {
   return (
     <BaseView style={styles.container}>
       <Text>Register</Text>
-
       <Button title="Login" onPress={registerViewModel.handleRegister} />
     </BaseView>
   );

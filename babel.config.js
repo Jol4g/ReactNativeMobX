@@ -3,6 +3,24 @@ module.exports = {
   plugins: [
     ['@babel/plugin-proposal-decorators', {legacy: true}],
     ['@babel/plugin-proposal-class-properties', {loose: true}],
-    // In contrast to MobX 4/5, "loose" must be false!    ^
+    // In contrast to MobX 4/5, "loose" must be false!    ^,
+    [
+      'babel-plugin-root-import',
+      {
+        rootPathPrefix: '@',
+        rootPathSuffix: 'src'
+      }
+    ],
   ],
+  env: {
+    production: {
+      plugins: [
+        'babel-plugin-root-import',
+        {
+          rootPathPrefix: '@',
+          rootPathSuffix: 'src'
+        }
+      ]
+    }
+  }
 };
