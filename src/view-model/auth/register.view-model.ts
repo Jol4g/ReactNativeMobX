@@ -1,8 +1,8 @@
-import {autorun, IReactionDisposer, makeAutoObservable} from 'mobx';
-import {IObservable} from '../types';
-import {User} from '@/model';
-import {navigate} from '@/utils/navigation/root.navigation';
-import {NavigationRoutes} from '@/utils';
+import { autorun, IReactionDisposer, makeAutoObservable } from 'mobx';
+import { IObservable } from '../types';
+import { user } from '../../model';
+import { navigate } from '../../utils/navigation/root.navigation';
+import { NavigationRoutes } from '../../utils';
 
 interface IRegister {
   setUserEmail: (email: string) => void;
@@ -12,35 +12,54 @@ interface IRegister {
 }
 
 class RegisterViewModel implements IRegister, Partial<IObservable> {
-  private userModel: User;
+
 
   disposerList: IReactionDisposer[] = [];
 
   constructor() {
-    this.userModel = new User();
-    console.log('Create User Model View object');
+
     makeAutoObservable(this);
 
     const disposer = autorun(() => {
-      console.log(this.userModel);
+      console.log(user);
     });
     this.disposerList.push(disposer);
   }
 
+  // email
   setUserEmail = (email: string) => {
-    this.userModel?.setEmail(email);
+    user?.setEmail(email);
   };
 
   get getUserEmail() {
-    return this.userModel.getEmail;
+    return user.getEmail;
   }
 
+  // password
   setUserPassword = (password: string) => {
-    this.userModel.setPassword(password);
+    user.setPassword(password);
   };
 
   get getUserPassword() {
-    return this.userModel.getPassword;
+    return user.getPassword;
+  }
+
+  // firstname
+  setUserFirstname = (firstname: string) => {
+    user.setFirstname(firstname);
+  };
+
+  get getUserFirstname() {
+    return user.firstname;
+  }
+  
+  // lastname
+  setUserLastname = (lastname: string) => {
+    user.setLastname(lastname);
+  };
+
+  get getUserLastname() {
+    return user.lastname;
   }
 
   handleRegister = () => {

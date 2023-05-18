@@ -1,4 +1,4 @@
-import {NetworkApiServices} from '@/data/network-services';
+import {NetworkApiServices} from '../../data/network-services';
 
 export default class LoginRepository {
   networkApiService = new NetworkApiServices();

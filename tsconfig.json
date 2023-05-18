@@ -8,9 +8,5 @@
     /* Completeness */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */,
     "target": "es6",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
   }
 }
